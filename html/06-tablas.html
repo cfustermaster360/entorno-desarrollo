@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tablas</title>
+</head>
+<body>
+    <h1>Ejercicios tablas</h1>
+    <table  border="1">
+        <caption>Temperaturas <time datetime="2025-10-28">28-10-2025</time></caption>
+        <thead>
+            <tr>
+                <th scope="col" id="c">Ciudad</th>
+                <th scope="col" id="max">Máxima</th>
+                <th scope="col" id="min">Mínima</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <th scope="row" id="zgz">Zaragoza</th>
+            <td headers="max zgz">20</td>
+            <td headers="min zgz">9</td>
+        </tr>
+        <tr>
+            <th scope="row" id="hues">Huesca</th>
+            <td headers="max hues">10</td>
+            <td headers="min hues">9</td>
+        </tr>
+        <tr>
+            <th scope="row" id="sev">Sevilla</th>
+            <td headers="max sev">28</td>
+            <td headers="min sev">18</td>
+        </tr>
+        <tr>
+            <th scope="row" id="mad">Madrid</th>
+            <td headers="max mad">25</td>
+            <td headers="min mad">14</td>
+        </tr>
+        <tr>
+            <th scope="row" id="bar">Barcelona</th>
+            <td headers="max bar">15</td>
+            <td headers="min bar">11</td>
+        </tr>
+    </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Datos proporcionados por AEMET</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table border="1">
+        <caption>Animales en peligro de extinción</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Actualidad</th>
+            <th>Previsión 2010</th>
+            <th>Previsión 2020</th>
+        </tr>
+        <tr>
+            <td>Ballena</td>
+            <td>6000</td>
+            <td>4000</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Oso pardo</td>
+            <td>50</td>
+            <td colspan="2" rowspan="2">0</td>
+        </tr>
+        <tr>
+        <td>Lince</td>
+        <td>0</td>
+        </tr>
+        <tr>
+            <td>Tigre</td>
+            <td>300</td>
+            <td colspan="2">210</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+        <tr>
+            <td></td>
+            <th scope="colgroup" colspan="3" id="mini" style="background-color: pink;">MP3 mini</th>
+            <th scope="colgroup" colspan="2" id="grande" style="background-color: pink;">MP3 grande</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" id="capacidad" style="background-color: #C8E6C9;">Capacidad de almacenamiento</th>
+            <td headers="mini capacidad" style="background-color: #C8E6C9;">4GB <br><span>&#40;1000 canciones&#41;</span></td>
+            <td headers="mini capacidad" style="background-color: #C8E6C9;">8GB <br><span>&#40;2000 canciones&#41;</span></td>
+            <td headers="mini capacidad" style="background-color: #C8E6C9;">16GB <br><span>&#40;4000 canciones&#41;</span></td>
+            <td headers="grande capacidad" style="background-color: #C8E6C9;">30GB <br><span>&#40;7500 caniones&#41;</span></td>
+            <td headers="grande capacidad" style="background-color: #C8E6C9;">80GB <br><span>&#40;20000 caniones&#41;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" id="colores" style="background-color: #FFECB3;">Colores</th>
+            <td headers="mini colores" style="background-color: #FFECB3;">Blanco</td>
+            <td headers="mini colores" style="background-color: #FFECB3;">
+                <ul>
+                    <li>Gris</li>
+                    <li>Verde</li>
+                    <li>Azul</li>
+                    <li>Rosa</li>
+                </ul>
+            <td headers="mini colores" style="background-color: #FFECB3;">Gris</td>
+            <td colspan="2" headers="grande colores" style="background-color: #FFECB3;">
+                <ul>
+                    <li>Blanco</li>
+                    <li>Gris</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" id="pantalla" style="background-color: #C8E6C9;">Pantalla</th>
+            <td colspan="3" headers="mini pantalla" style="background-color: #C8E6C9;">LCD de 3 cm <span>&#40;diagonal&#41;</span> con retroiluminación</td>
+            <td colspan="2" headers="grande pantalla" style="background-color: #C8E6C9;">LCD de 6 cm <span>&#40;diagonal&#41;</span> con retroiluminación</td>
+        </tr>
+        <tr>
+            <th scope="row" rowspan="2" id="tiempo" style="background-color: #FFECB3;">Tiempo de carga</th>
+            <td colspan="3" rowspan="2" headers="mini tiempo" style="background-color: #FFECB3;">Unas 3 horas</td>
+            <td colspan="2" headers="grande tiempo" style="background-color: #FFECB3;">Unas 4 horas</td>
+        </tr>
+        <tr>
+            <td colspan="2" headers="grande tiempo" style="background-color: #FFECB3;">Unas 2 horas para alcanzar el 80% de la capacidad</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>

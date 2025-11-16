@@ -1,0 +1,81 @@
+/* Variables globales de entorno */
+:root {
+    --padding-header: 1rem;
+    --padding-main: 1rem;
+    --padding-footer: 1rem;
+    --color-primary: #ff8800;
+    --color-text: #333;
+    --color-bg-header: #fafafa;
+    --color-bg-footer: #f4f4f4;
+  }
+  
+  /* Reset básico */
+  body {
+    font-family: system-ui, sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Safe area padding para móviles con notch */
+  header {
+    background: var(--color-bg-header);
+    border-bottom: 1px solid #ddd;
+    padding: calc(var(--padding-header) + env(safe-area-inset-top))
+             var(--padding-header)
+             var(--padding-header)
+             var(--padding-header);
+  }
+  
+  .logo {
+    max-height: 50px;
+    width: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: var(--color-primary);
+  }
+  
+  nav a.active {
+    color: var(--color-primary);
+    /*font-weight: bold;*/
+    border-bottom: 2px solid var(--color-primary);
+  }
+  
+  main {
+    padding: calc(var(--padding-main) + env(safe-area-inset-top))
+             var(--padding-main)
+             calc(var(--padding-main) + env(safe-area-inset-bottom))
+             var(--padding-main);
+  }
+  
+  footer {
+    text-align: center;
+    padding: calc(var(--padding-footer) + env(safe-area-inset-bottom)) var(--padding-footer);
+    background: var(--color-bg-footer);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

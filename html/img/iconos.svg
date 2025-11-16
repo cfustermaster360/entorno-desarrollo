@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+   <symbol id="icon-home" viewBox="0 0 100 100">
+    <path d="M50 0L0 50h10v50h30V70h20v30h30V50h10z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-star" viewBox="0 0 100 100">
+    <polygon points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="currentColor"/>
+  </symbol>
+  </svg>
