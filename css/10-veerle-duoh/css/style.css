@@ -1,0 +1,167 @@
+/*
+Iconos SVG:fontawesome.com
+Tutorials: hsl(263, 20%, 49%)
+Inspiration: hsl(340, 100%, 75%)
+Sidenotes, logo: hsl(30, 31%, 95%)
+texto, articles, fondo-lupa: hsl(206, 24%, 11%)
+*/
+
+:root   {
+    --tutorials: hsl(263, 20%, 49%);
+    --inspiration: hsl(340, 100%, 75%);
+    --color-principal: hsl(206, 24%, 11%);
+    --color-secundario: hsl(30, 31%, 95%);
+}
+/*----------------- Fuentes-----------------------*/
+@font-face {
+    font-display: swap;
+    font-family: 'Cartridge-Regular';
+    src: url("../fonts/Cartridge-Regular.woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Cartridge-Bold';
+    src: url("../fonts/Cartridge-Bold.woff2") format("woff2");
+}
+/*---------------General------------------*/
+html    {
+    font-size: clamp(15px, 0.5vw + 12px, 18px);
+}
+body    {
+    color: var(--color-principal);
+}
+a   {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+.d-flex {
+    display: flex;
+}
+.flex-grow  {
+    flex-grow: 1;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.container  {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+@media screen {
+    .d-none{
+        display: none;
+    }
+}
+@media  screen and (min-width: 479px) {
+    .visible-sm{
+        display: initial;
+    }
+}
+@media  screen and (min-width: 599px) {
+    .visible-md{
+        display: initial;
+    }
+}
+@media  screen and (min-width: 799px) {
+    .visible-lg{
+        display: initial;
+    }
+}
+/*------------------Navigation---------------------*/
+nav{
+    font-size: 1rem;
+    font-family: 'Cartridge-Bold', 'sans-serif';
+}
+nav * {
+    background-repeat: no-repeat;
+    background-size: 1.075em;
+    text-transform: uppercase;
+}
+nav li  {
+    display: flex;
+}
+nav li a    {
+    display: flex;
+    align-items: center;
+    padding-inline: calc(0.5em * 2 + 1.075em) 0.5em;
+    background-position: 0.5em center;
+}
+nav a[title="Inicio"],
+nav button {
+    height: 3em;
+    aspect-ratio: 1;
+    width: 3em;
+}
+nav [title="Inicio"]{
+    background-color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Un tamaño relativo a su contenedor */
+img[alt='Logo']{
+    width: 30px;
+    display: block;
+}
+nav ul  {
+    margin-block: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+nav li:not(.sidenotes) a:hover  {
+    color: hsl(0 0 100%);
+}
+nav .tutorials a {
+    color: var(--tutorials);
+    background-image: url(../img/icon-tutorials.svg);
+}
+nav .tutorials a:hover {
+    background-color: hsl(263, 20%, 49%);
+    background-image: url(../img/icon-tutorials-active.svg);
+}
+nav .articles a  {
+    color: var(--articles);
+    background-image: url(../img/icon-articles.svg);
+}
+nav .articles a:hover   {
+    background-color: hsl(206, 24%, 11%);
+    background-image: url(../img/icon-articles-active.svg);
+}
+nav .inspiration  a {
+    color: var(--inspiration);
+    background-image: url(../img/icon-inspiration.svg);
+}
+nav .inspiration a:hover {
+    background-color: hsl(340, 100%, 75%);
+    background-image: url(../img/icon-inspiration-active.svg);    
+}
+nav .sidenotes  a {
+    color: var(--color-principal);
+    background-image: url(../img/icon-sidenotes.svg);
+}
+nav .sidenotes a:hover   {
+    background-color: hsl(30, 31%, 95%);
+}
+nav button {
+    background-image: url(../img/icon-search.svg); 
+    background-color: transparent;
+    border: 0 none;
+    margin-inline-start: auto;
+    background-position: center;
+}
+nav button:hover    {
+    background-color: var(--color-principal);
+    background-image: url(../img/icon-search-active.svg);
+}
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .caja-1{
+            box-sizing: border-box;
+            display: block;
+            width: 200px;
+            height: 200px ;
+            padding:5px ;
+            margin: 30px;
+            background: burlywood;
+            border: 2px solid black;
+            border-radius: 3%;
+            text-decoration: none;
+        }
+        .caja-2{
+            background: red;
+        }
+        .btn {
+            display: inline-block;
+            background: yellow;
+            text-decoration: none;
+            color: black;
+            padding: 8px 16px;
+            margin: 16px auto;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .cuadrado {
+            width: 200px;
+            aspect-ratio: 3/6;
+            background: green;
+        }
+        iframe{
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+        .b-200x200{
+            width: 200px;
+            aspect-ratio: 1;
+            background-color: yellow;
+            overflow: scroll;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b-200x200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus fugiat quaerat quos sapiente suscipit quis nisi maxime vero, facilis voluptatem architecto repellendus dignissimos distinctio vel modi perferendis reprehenderit incidunt?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptate dolorem maxime quas ullam hic, earum temporibus rerum perspiciatis eaque dolore id omnis optio. Eligendi autem adipisci laborum aut suscipit!</p>
+    </div>
+    <iframe src="https://www.youtube.com/embed/U6EnnD_ut9I?si=JI_Jz5TpxfCC4UOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="caja-1">
+    Caja 1
+    </div>
+
+    <div class="text-center">
+        <a href="#" class="btn">Más info</a>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora dolores recusandae ipsum quo, odio ipsa possimus sequi rerum? Obcaecati magni provident neque blanditiis eius fugiat hic culpa ratione, veritatis quasi?</p>
+
+    <p class="caja-1">Párrafo</p>
+
+    <div class="caja-2">Caja 1
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eaque eos fugiat maxime nobis nulla perspiciatis nihil vel aspernatur laboriosam unde ratione, assumenda natus! Dolorem quod quam</p>
+    </div>
+    <div class="cuadrado">
+        hola
+    </div>
+
+</body>
+</html>

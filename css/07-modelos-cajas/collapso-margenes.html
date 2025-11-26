@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapso de márgenes</title>
+    <style>
+
+        .padre {
+            width: 80%;
+            margin-block: 50px;
+            background: red;
+
+        }
+        .padre > *{
+            height: 200px;
+        }
+        .primer-hijo {
+            box-sizing: border-box;
+            margin-top: 50px;
+            background: purple;
+        }
+        .ultimo-hijo{
+            box-sizing: border-box;
+            margin-bottom: 50px;
+            background: greenyellow;
+        }
+        .p-y{
+            padding-block: 50px;
+        }
+        .borde{
+            border-block: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <!--Márgenes de un elemento hijo y su primer o último hijo pueden colapsar con los márgenes del padre, si no hay padding, borde o contenido que los separe. (Probar)-->
+
+<h2>Colapsan los márgenes</h2>
+  <div class="padre">
+    <div class="primer-hijo">
+        Primer hijo
+    </div>
+    <div class="ultimo-hijo">
+        Último hijo
+    </div>
+</div>
+
+<h2>No colapsan por contenido</h2>
+  <div class="padre">
+    Se ve el texto del padre
+    <div class="primer-hijo">
+        Primer hijo
+    </div>
+    <div class="ultimo-hijo">
+        Último hijo
+    </div>
+  </div>
+
+<h2>No colapsan por padding</h2>
+  <div class="padre p-y">
+    Se ve el texto del padre
+    <div class="primer-hijo">
+        Primer hijo
+    </div>
+    <div class="ultimo-hijo">
+        Último hijo
+    </div>
+  </div>
+
+<h2>Colapsan por borde</h2>
+  <div class="padre borde">
+    Se ve el texto del padre
+    <div class="primer-hijo borde">
+        Primer hijo
+    </div>
+    <div class="ultimo-hijo borde">
+        Último hijo
+    </div>
+  </div>
+
+</body>
+</html>
